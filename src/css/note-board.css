@@ -1,0 +1,78 @@
+/* Variabler*/
+/* Light mode colors*/
+/* Dark mode colors*/
+/* Light mode grays*/
+/* Dark mode grays*/
+:export {
+  darkTheme: false;
+  dwhite: #fff;
+  black: #000;
+  /* Light mode colors*/
+  pinkGradient: linear-gradient(135deg, #d800ff, #ff00a8, #ffae00);
+  ltRed: #ff3a31;
+  ltBlue: #007bfe;
+  ltGreen: #34c758;
+  ltIndigo: #5856d7;
+  ltOrange: #ff9501;
+  ltPink: #ff2d55;
+  ltPurple: #af52df;
+  ltLightBlue: #5ac7fb;
+  ltYellow: #ffcc01;
+  /* Dark mode colors*/
+  /* Light mode grays*/
+  ltGray1: #8e8e94;
+  ltGray2: #aeaeb3;
+  ltGray3: #c7c7cc;
+  ltGray4: #d1d1d6;
+  ltGray5: #e0e0e0;
+  ltGray6: #f2f2f7;
+  /* Dark mode grays*/
+  drkGray1: #8e8e95;
+  drkGray2: #636367;
+  drkGray3: #48484b;
+  drkGray4: #3a3a3c;
+  drkGray5: #2c2c2f;
+  drkGray6: #1c1c1f;
+}
+
+.note-board {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  /*display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    grid-gap: 50px;
+    */
+  max-width: 100%;
+  margin-left: 100px;
+  margin-top: 150px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  overflow-x: hidden;
+}
+
+.note-board {
+  display: -webkit-box;
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox;
+  /* Not needed if autoprefixing */
+  display: flex;
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 25px;
+  /* gutter size */
+  background-clip: padding-box;
+  height: -webkit-max-content !important;
+  height: -moz-max-content !important;
+  height: max-content !important;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 25px;
+}
+/*# sourceMappingURL=note-board.css.map */

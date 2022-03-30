@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* Variabler*/
+/* Light mode colors*/
+/* Dark mode colors*/
+/* Light mode grays*/
+/* Dark mode grays*/
+@import url("https://rsms.me/inter/inter.css");
+:export {
+  darkTheme: false;
+  dwhite: #fff;
+  black: #000;
+  /* Light mode colors*/
+  pinkGradient: linear-gradient(135deg, #d800ff, #ff00a8, #ffae00);
+  ltRed: #ff3a31;
+  ltBlue: #007bfe;
+  ltGreen: #34c758;
+  ltIndigo: #5856d7;
+  ltOrange: #ff9501;
+  ltPink: #ff2d55;
+  ltPurple: #af52df;
+  ltLightBlue: #5ac7fb;
+  ltYellow: #ffcc01;
+  /* Dark mode colors*/
+  /* Light mode grays*/
+  ltGray1: #8e8e94;
+  ltGray2: #aeaeb3;
+  ltGray3: #c7c7cc;
+  ltGray4: #d1d1d6;
+  ltGray5: #e0e0e0;
+  ltGray6: #f2f2f7;
+  /* Dark mode grays*/
+  drkGray1: #8e8e95;
+  drkGray2: #636367;
+  drkGray3: #48484b;
+  drkGray4: #3a3a3c;
+  drkGray5: #2c2c2f;
+  drkGray6: #1c1c1f;
+}
+
+.note {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-radius: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 18px;
+  position: relative;
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid 2px transparent;
+  /* !importanté */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.note:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right top, from(red), to(orange));
+  background: linear-gradient(to right, red, orange);
+  z-index: -1;
+  margin: -2px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+}
+
+.note input {
+  width: 50%;
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #1c1c1f;
+  margin-bottom: .75em;
+  font-family: "inter";
+}
+
+.note textarea {
+  resize: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #1c1c1f;
+  font-family: "inter";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.note textarea:nth-child(1) {
+  margin-bottom: .75em;
+  font-weight: bold;
+}
+
+.note .option-buttons {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.note .option-buttons i {
+  font-size: 20px;
+  -webkit-text-stroke: 1px #fff;
+  color: #1c1c1f;
+}
+/*# sourceMappingURL=note.css.map */

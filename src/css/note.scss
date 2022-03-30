@@ -1,0 +1,73 @@
+@import "variables";
+@import url('https://rsms.me/inter/inter.css');
+
+
+.note{
+    $border: 2px;
+    width: 100%;
+    height: auto;
+    background: $white;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px;
+    position: relative;
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+    box-sizing: border-box;
+
+
+
+
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: linear-gradient(to right, red, orange);
+        z-index: -1;
+        margin: -$border; /* !importanté */
+        border-radius: inherit; /* !importanté */
+    }
+
+    input{
+        width: 50%;
+        outline: none;
+        background: none;
+        border: none;
+        font-size: 20px;
+        color: $drkGray6;
+        margin-bottom: .75em;
+        font-family: "inter";
+    }
+
+    textarea{
+        resize: none;
+        width: 100%;
+        outline: none;
+        background: none;
+        border: none;
+        font-size: 20px;
+        color: $drkGray6;
+        font-family: "inter";
+        display: flex;
+        align-items: center;
+        height: fit-content;
+
+        &:nth-child(1){
+            margin-bottom: .75em;
+            font-weight: bold;
+        }
+    }
+
+    .option-buttons{
+        width: fit-content;
+        height: fit-content;
+
+        i{
+            font-size: 20px;
+            -webkit-text-stroke: 1px $white;
+            color: $drkGray6;
+        }
+    }
+}

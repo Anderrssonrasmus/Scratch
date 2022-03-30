@@ -1,0 +1,78 @@
+/* Variabler*/
+$white: #fff;
+$black: #000;
+$fileColor: #f5f5f7;
+
+/* Light mode colors*/
+$pinkGradient: linear-gradient(135deg, #d800ff, #ff00a8, #ffae00);
+$ltRed: #ff3a31;
+$ltBlue: #007bfe;
+$ltGreen: #34c758;
+$ltIndigo: #5856d7;
+$ltOrange: #ff9501;
+$ltPink: #ff2d55;
+$ltPurple: #af52df;
+$ltLightBlue: #5ac7fb;
+$ltYellow: #ffcc01; 
+
+/* Dark mode colors*/
+
+/* Light mode grays*/
+
+$ltGray1: #8e8e94;
+$ltGray2: #aeaeb3;
+$ltGray3: #c7c7cc;
+$ltGray4: #d1d1d6;
+$ltGray5: #e0e0e0;
+$ltGray6: #f2f2f7;
+
+/* Dark mode grays*/
+
+
+$drkGray1: #8e8e95;
+$drkGray2: #636367;
+$drkGray3: #48484b;
+$drkGray4: #3a3a3c;
+$drkGray5: #2c2c2f;
+$drkGray6: #1c1c1f;
+
+$darkTheme: false !default;
+:export {
+
+	darkTheme: $darkTheme;
+	dwhite: $white;
+	black: $black;
+
+	/* Light mode colors*/
+	pinkGradient: $pinkGradient;
+	ltRed: $ltRed;
+	ltBlue: $ltBlue;
+	ltGreen: $ltGreen;
+	ltIndigo: $ltIndigo;
+	ltOrange: $ltOrange;
+	ltPink: $ltPink;
+	ltPurple: $ltPurple;
+	ltLightBlue: $ltLightBlue;
+	ltYellow: $ltYellow; 
+
+	/* Dark mode colors*/
+
+	/* Light mode grays*/
+
+	ltGray1: $ltGray1;
+	ltGray2: $ltGray2;
+	ltGray3: $ltGray3;
+	ltGray4: $ltGray4;
+	ltGray5: $ltGray5;
+	ltGray6: $ltGray6;
+
+	/* Dark mode grays*/
+
+
+	drkGray1: $drkGray1;
+	drkGray2: $drkGray2;
+	drkGray3: $drkGray3;
+	drkGray4: $drkGray4;
+	drkGray5: $drkGray5;
+	drkGray6: $drkGray6;
+}

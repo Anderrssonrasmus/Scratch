@@ -1,0 +1,137 @@
+@import "../css/variables.scss";
+
+@media only screen and (max-width: 640px){
+    header
+	{
+		top: 0;
+		position: fixed;
+		background: $white;
+		height: 100px;
+		width: 100%;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 10000001;
+		border-bottom: 2px solid $ltGray5;
+		
+		#logoText
+		{
+			margin: 0 20px;
+			display: flex;
+			align-items: center;
+			
+			.profilePic
+			{
+				border-radius: 50%;
+				width: 50px;
+				height: 50px;
+				margin-right: 15px;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 100%;
+				background-image: url(../imgs/me.png);
+			}
+			
+			div:nth-child(2)
+			{
+				h1
+				{
+					font-family: Inter;
+					font-weight: 700;
+					font-size: 25px;
+				}
+				
+				#headDesktop
+				{
+					display: none;
+				}
+
+				p
+				{
+					font-family: Inter;
+					font-weight: 700;
+					font-size: 15px;
+				}	
+			}
+		}	
+		
+		.createFileH
+		{
+			width: 40px;
+			height: 40px;
+			margin-right: 20px;
+			border-radius: 10px;
+			background-color: $ltGray4;
+		}
+	}
+}
+
+@media only screen and (min-width: 640px){
+	header
+	{
+		top: 0;
+		position: fixed;
+		background: $white;
+		height: 100px;
+		width: 100%;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 1000000;
+		border-bottom: 2px solid #e0e0e0;
+		
+		#logoText
+		{
+			margin: 0 20px;
+			display: flex;
+			align-items: center;
+			
+			.profilePic
+			{
+				border-radius: 50%;
+				width: 50px;
+				height: 50px;
+				margin-right: 15px;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 100%;
+				background-image: url(../imgs/me.png);
+			}
+			
+			div:nth-child(2)
+			{
+				h1
+				{
+					font-family: Inter;
+					font-weight: 700;
+					font-size: 25px;
+					color: $drkGray6;
+				}
+				
+				#headDesktop
+				{
+					display: none;
+				}
+
+				p
+				{
+					font-family: Inter;
+					font-weight: 700;
+					font-size: 15px;
+					color: $drkGray6;
+				}	
+			}
+		}	
+		
+		.createFileH
+		{
+			width: 40px;
+			height: 40px;
+			margin-right: 20px;
+			border-radius: 10px;
+			background-color: $ltGray4;
+		}
+	}
+}

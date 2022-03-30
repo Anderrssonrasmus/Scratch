@@ -1,0 +1,239 @@
+@import "variables.scss";
+
+#navbar
+	{
+		display: flex;
+		flex-direction: row;
+		width: 50px;
+		background-color: $white;
+		height: calc(100% - 99px);
+		position: fixed;
+        bottom: 0;
+		z-index: 100000;
+		overflow-x: hidden;
+		transition: 0.5s;
+		//border-right: 2px solid $ltGray5;
+
+		div:nth-child(1)
+		{
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			justify-content: space-evenly;
+
+			#openCloseBtn
+			{
+				width: 20px;
+				i{color: $drkGray6;}
+				background: $white;
+			}
+			
+			.navbarBtn{
+				font-size: 23px;
+				width: auto;
+				border: 0;
+				outline: none;
+				background: none;
+				color: $drkGray6;
+				transform-origin: center;
+
+				&:hover i
+				{
+					color: lighten($drkGray6, 16%);
+					//font-size: 27px;
+					//margin: -2px 0 -2px 0;
+				}
+
+				i
+				{
+					color: $drkGray6;
+				}
+			}
+
+			.createFileNavbar
+			{
+				width: 25px;
+				height: 25px;
+				margin-left: 13px;
+				border-radius: 25%;
+				background-color: $ltGray6;
+				margin-bottom: 30px;
+
+				&:hover
+				{
+					background-color: darken($ltGray6, 10%);
+					width: 40px;
+					margin-left: 5px;
+					transition: 100ms;
+				}
+
+				&:active
+				{
+					color: darken($ltGray6, 20%);
+				}
+
+				i
+				{
+					font-size: 13px;
+					color: $white;
+				}
+			}
+
+
+
+			#openCloseDiv
+			{
+				width: 50px;
+				height: 20px;
+			}
+
+			#navbarFeatures
+			{
+				width: 50px;
+				height: 100vh;
+				margin-bottom: 80px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-content: center;
+			}
+
+			#navbarCreateFile
+			{
+				width: 50px;
+				height: auto;
+			}
+		}
+	}
+
+	#navbarContent
+	{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 20px;
+		margin-bottom: 86px;
+
+		#navbarQT{
+			display: none;
+
+			#qTContent
+			{
+				margin-top: 10px;
+				height: 100%;
+			}
+
+			#navbarQTSubmit
+			{
+				background: $black;
+				color: $white;
+				width: 20px;
+				height: 20px;
+				z-index: 2;
+			}
+		}
+
+		#navbarFavorites
+		{
+			.file
+			{
+				display: flex;
+				flex-direction: row;
+				background: $ltGray6;
+				min-width: 260px;
+				max-width: 260px;
+				height: 125px;
+				margin: 10px 0;
+				z-index: 0;
+				border: 2px solid transparent;
+				background-image: linear-gradient($white, $white), $ltGray2;
+				background-origin: border-box;
+				background-clip: content-box, border-box;
+				border-radius: 30px;
+
+				transform: scale(1);
+				transform-origin: center;
+				transition: 0.25s;
+				transition-timing-function: ease-in-out;
+
+				&:hover
+				{
+					transform: scale(1.01);
+					transition: all .1s ease-in-out; 
+
+				}
+
+				.fileA
+				{
+					display: flex;
+					flex-direction: column;
+					width: 80%;
+					text-decoration: none;
+					color: $black; 
+					
+					textarea
+					{
+						margin-left: 18px;
+						margin-top: 18px;
+						resize: none;
+						width: 100%;
+						height: 100%;
+						border: none;
+						background: none;
+
+						&:nth-child(1)
+						{
+							font-size: 20px;
+						}
+
+						&:nth-child(2)
+						{
+							font-size: 15px;
+						}
+					}
+
+				}
+				
+				.buttonDiv
+				{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					background: none;
+					width: 20%;
+					height: 100%;
+					border-bottom-right-radius: 35px;
+					border-top-right-radius: 35px;
+					
+					.fileBtnIcon
+					{
+						font-size: 20px;
+						z-index: 5;
+						color: $ltRed;
+					}
+				}
+				
+				.buttonDiv button:nth-child(1)
+				{
+					flex: 1;
+					height: 100%;
+					width: 100%;
+					border-top-right-radius: 35px;
+					background: none;
+					border: none;
+				}
+
+				.buttonDiv button:nth-child(2)
+				{
+					flex: 1;
+					height: 100%;
+					width: 100%;
+					border-bottom-right-radius: 35px;
+					border: none;
+					background: none;
+				}
+			}
+		}
+	}

@@ -1,0 +1,299 @@
+/* Variabler*/
+/* Light mode colors*/
+/* Dark mode colors*/
+/* Light mode grays*/
+/* Dark mode grays*/
+:export {
+  darkTheme: false;
+  dwhite: #fff;
+  black: #000;
+  /* Light mode colors*/
+  pinkGradient: linear-gradient(135deg, #d800ff, #ff00a8, #ffae00);
+  ltRed: #ff3a31;
+  ltBlue: #007bfe;
+  ltGreen: #34c758;
+  ltIndigo: #5856d7;
+  ltOrange: #ff9501;
+  ltPink: #ff2d55;
+  ltPurple: #af52df;
+  ltLightBlue: #5ac7fb;
+  ltYellow: #ffcc01;
+  /* Dark mode colors*/
+  /* Light mode grays*/
+  ltGray1: #8e8e94;
+  ltGray2: #aeaeb3;
+  ltGray3: #c7c7cc;
+  ltGray4: #d1d1d6;
+  ltGray5: #e0e0e0;
+  ltGray6: #f2f2f7;
+  /* Dark mode grays*/
+  drkGray1: #8e8e95;
+  drkGray2: #636367;
+  drkGray3: #48484b;
+  drkGray4: #3a3a3c;
+  drkGray5: #2c2c2f;
+  drkGray6: #1c1c1f;
+}
+
+#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50px;
+  background-color: #fff;
+  height: calc(100% - 99px);
+  position: fixed;
+  bottom: 0;
+  z-index: 100000;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#navbar div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#navbar div:nth-child(1) #openCloseBtn {
+  width: 20px;
+  background: #fff;
+}
+
+#navbar div:nth-child(1) #openCloseBtn i {
+  color: #1c1c1f;
+}
+
+#navbar div:nth-child(1) .navbarBtn {
+  font-size: 23px;
+  width: auto;
+  border: 0;
+  outline: none;
+  background: none;
+  color: #1c1c1f;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#navbar div:nth-child(1) .navbarBtn:hover i {
+  color: #43434a;
+}
+
+#navbar div:nth-child(1) .navbarBtn i {
+  color: #1c1c1f;
+}
+
+#navbar div:nth-child(1) .createFileNavbar {
+  width: 25px;
+  height: 25px;
+  margin-left: 13px;
+  border-radius: 25%;
+  background-color: #f2f2f7;
+  margin-bottom: 30px;
+}
+
+#navbar div:nth-child(1) .createFileNavbar:hover {
+  background-color: #d2d2e4;
+  width: 40px;
+  margin-left: 5px;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+#navbar div:nth-child(1) .createFileNavbar:active {
+  color: #b3b3d0;
+}
+
+#navbar div:nth-child(1) .createFileNavbar i {
+  font-size: 13px;
+  color: #fff;
+}
+
+#navbar div:nth-child(1) #openCloseDiv {
+  width: 50px;
+  height: 20px;
+}
+
+#navbar div:nth-child(1) #navbarFeatures {
+  width: 50px;
+  height: 100vh;
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#navbar div:nth-child(1) #navbarCreateFile {
+  width: 50px;
+  height: auto;
+}
+
+#navbarContent {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  margin-bottom: 86px;
+}
+
+#navbarContent #navbarQT {
+  display: none;
+}
+
+#navbarContent #navbarQT #qTContent {
+  margin-top: 10px;
+  height: 100%;
+}
+
+#navbarContent #navbarQT #navbarQTSubmit {
+  background: #000;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+}
+
+#navbarContent #navbarFavorites .file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #f2f2f7;
+  min-width: 260px;
+  max-width: 260px;
+  height: 125px;
+  margin: 10px 0;
+  z-index: 0;
+  border: 2px solid transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)), #aeaeb3;
+  background-image: linear-gradient(#fff, #fff), #aeaeb3;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 30px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#navbarContent #navbarFavorites .file:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+#navbarContent #navbarFavorites .file .fileA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  text-decoration: none;
+  color: #000;
+}
+
+#navbarContent #navbarFavorites .file .fileA textarea {
+  margin-left: 18px;
+  margin-top: 18px;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+}
+
+#navbarContent #navbarFavorites .file .fileA textarea:nth-child(1) {
+  font-size: 20px;
+}
+
+#navbarContent #navbarFavorites .file .fileA textarea:nth-child(2) {
+  font-size: 15px;
+}
+
+#navbarContent #navbarFavorites .file .buttonDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  width: 20%;
+  height: 100%;
+  border-bottom-right-radius: 35px;
+  border-top-right-radius: 35px;
+}
+
+#navbarContent #navbarFavorites .file .buttonDiv .fileBtnIcon {
+  font-size: 20px;
+  z-index: 5;
+  color: #ff3a31;
+}
+
+#navbarContent #navbarFavorites .file .buttonDiv button:nth-child(1) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 35px;
+  background: none;
+  border: none;
+}
+
+#navbarContent #navbarFavorites .file .buttonDiv button:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 35px;
+  border: none;
+  background: none;
+}
+/*# sourceMappingURL=navbar.css.map */

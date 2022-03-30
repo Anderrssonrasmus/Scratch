@@ -1,0 +1,167 @@
+/* Variabler*/
+/* Light mode colors*/
+/* Dark mode colors*/
+/* Light mode grays*/
+/* Dark mode grays*/
+:export {
+  darkTheme: false;
+  dwhite: #fff;
+  black: #000;
+  /* Light mode colors*/
+  pinkGradient: linear-gradient(135deg, #d800ff, #ff00a8, #ffae00);
+  ltRed: #ff3a31;
+  ltBlue: #007bfe;
+  ltGreen: #34c758;
+  ltIndigo: #5856d7;
+  ltOrange: #ff9501;
+  ltPink: #ff2d55;
+  ltPurple: #af52df;
+  ltLightBlue: #5ac7fb;
+  ltYellow: #ffcc01;
+  /* Dark mode colors*/
+  /* Light mode grays*/
+  ltGray1: #8e8e94;
+  ltGray2: #aeaeb3;
+  ltGray3: #c7c7cc;
+  ltGray4: #d1d1d6;
+  ltGray5: #e0e0e0;
+  ltGray6: #f2f2f7;
+  /* Dark mode grays*/
+  drkGray1: #8e8e95;
+  drkGray2: #636367;
+  drkGray3: #48484b;
+  drkGray4: #3a3a3c;
+  drkGray5: #2c2c2f;
+  drkGray6: #1c1c1f;
+}
+
+@media only screen and (max-width: 640px) {
+  header {
+    top: 0;
+    position: fixed;
+    background: #fff;
+    height: 100px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 10000001;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  header #logoText {
+    margin: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header #logoText .profilePic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(../imgs/me.png);
+  }
+  header #logoText div:nth-child(2) h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  header #logoText div:nth-child(2) #headDesktop {
+    display: none;
+  }
+  header #logoText div:nth-child(2) p {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  header .createFileH {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: #d1d1d6;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    top: 0;
+    position: fixed;
+    background: #fff;
+    height: 100px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1000000;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  header #logoText {
+    margin: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header #logoText .profilePic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(../imgs/me.png);
+  }
+  header #logoText div:nth-child(2) h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 25px;
+    color: #1c1c1f;
+  }
+  header #logoText div:nth-child(2) #headDesktop {
+    display: none;
+  }
+  header #logoText div:nth-child(2) p {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 15px;
+    color: #1c1c1f;
+  }
+  header .createFileH {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: #d1d1d6;
+  }
+}
+/*# sourceMappingURL=header.css.map */
